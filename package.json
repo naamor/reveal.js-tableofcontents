@@ -1,0 +1,26 @@
+{
+  "name": "reveal.js-tableofcontents",
+  "version": "1.0.0",
+  "description": "A table of contents plugin for reveal.js to generate automatically a table of contents slide",
+  "main": "tableofcontents.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naamor/reveal.js-tableofcontents.git"
+  },
+  "keywords": [
+    "reveal-js",
+    "revealjs",
+    "reveal",
+    "reveal-plugin",
+    "reveal-js-plugin"
+  ],
+  "author": "Roman Stocker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naamor/reveal.js-tableofcontents/issues"
+  },
+  "homepage": "https://github.com/naamor/reveal.js-tableofcontents#readme"
+}
