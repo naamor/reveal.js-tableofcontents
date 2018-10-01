@@ -1,0 +1,8 @@
+[submodule "plugin/reveal.js-tableofcontents"]
+    path = plugin/reveal.js-tableofcontents
+    url = https://github.com/naamor/reveal.js-tableofcontents
+    branch = master
+[submodule "module/reveal.js"]
+    path = module/reveal.js
+    url = https://github.com/hakimel/reveal.js.git
+    branch = master
