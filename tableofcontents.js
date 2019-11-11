@@ -14,6 +14,7 @@ var RevealTableOfContents = window.RevealTableOfContents || (function () {
 
     // Set all option defaults
     var options = Reveal.getConfig().tableofcontents || {};
+    var titleTag = "h1";
     var titleTagSelector = ["h1", "h2", "h3", "h4", "h5", "h6"];
     var title = options.title || "Table of Contents";
     var position = options.position || 2;
@@ -39,9 +40,9 @@ var RevealTableOfContents = window.RevealTableOfContents || (function () {
 
         var section = document.createElement("section");
 
-        var h1 = document.createElement("h1");
-        h1.innerText = title;
-        section.appendChild(h1);
+        var heading = document.createElement(titleTag);
+        heading.innerText = title;
+        section.appendChild(heading);
 
         var list = generateList();
         section.appendChild(list);
