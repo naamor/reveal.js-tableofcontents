@@ -10,8 +10,6 @@
  */
 
 var RevealTableOfContents = window.RevealTableOfContents || (function () {
-    loadResource("plugin/table-of-contents/table-of-contents.css", "stylesheet");
-
     // Set all option defaults
     var options = Reveal.getConfig().tableofcontents || {};
     var titleTagSelector = ["h1", "h2", "h3", "h4", "h5", "h6"];
