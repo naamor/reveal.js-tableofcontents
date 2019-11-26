@@ -113,40 +113,4 @@ var RevealTableOfContents = window.RevealTableOfContents || (function () {
         if (valueA.tagName > valueB.tagName) return 1;
         return 0;
     }
-
-    // Modified from math plugin
-    function loadResource(url, type, callback) {
-        var head = document.querySelector("head");
-        var resource;
-
-        if (type === "script") {
-            resource = document.createElement("script");
-            resource.type = "text/javascript";
-            resource.src = url;
-        } else if (type === "stylesheet") {
-            resource = document.createElement("link");
-            resource.rel = "stylesheet";
-            resource.href = url;
-        }
-
-        // Wrapper for callback to make sure it only fires once
-        var finish = function () {
-            if (typeof callback === "function") {
-                callback.call();
-                callback = null;
-            }
-        };
-
-        resource.onload = finish;
-
-        // IE
-        resource.onreadystatechange = function () {
-            if (this.readyState === "loaded") {
-                finish();
-            }
-        };
-
-        // Normal browsers
-        head.appendChild(resource);
-    }
 })();
