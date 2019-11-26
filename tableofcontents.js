@@ -14,7 +14,7 @@ var RevealTableOfContents = window.RevealTableOfContents || (function () {
 
     // Set all option defaults
     var options = Reveal.getConfig().tableofcontents || {};
-    var titleTag = "h1";
+    var titleTag = options.titleTag || "h1";
     var titleTagSelector = ["h1", "h2", "h3", "h4", "h5", "h6"];
     var title = options.title || "Table of Contents";
     var position = options.position || 2;
