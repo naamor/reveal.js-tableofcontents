@@ -57,6 +57,9 @@ Reveal.initialize({
         // Specifies the position of the table of contents slide in the presentation
         position: 2,
 
+        // Specifies html tag in which the table of contents title stands
+        titleTag: "h1",
+
         // Specifies which slide tag elements will be used
         // for generating the table of contents.
         titleTagSelector: "h1, h2, h3, h4, h5, h6",
